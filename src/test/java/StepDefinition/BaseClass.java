@@ -3,6 +3,7 @@ package StepDefinition;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.PageFactory;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -12,7 +13,7 @@ import java.util.Properties;
 public class BaseClass {
 try {
         propertiesPath = new Properties();
-        FileInputStream input = new FileInputStream(System.getProperty("user.dir") + "//src//main//java//SauceDemo//PropertiesFiles//Config.properties");
+        FileInputStream input = new FileInputStream(System.getProperty("user.dir") + "//src//main//java//SauceDemo1//PropertiesFiles//Config.properties");
         propertiesPath.load(input);
     } catch (
     FileNotFoundException exception) {
